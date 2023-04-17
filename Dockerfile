@@ -2,7 +2,7 @@ FROM ubuntu:latest
 RUN apt-get -qq update
 RUN apt-get install wget -y
 RUN mkdir /usr/local/rlm
-
+RUN chmod -R 777 /usr/local/rlm
 # Install Reprise to latest version
 RUN wget http://www.reprisesoftware.com/license_admin_kits/x64_l1.admin.tar.gz
 RUN tar xvf x64_l1.admin.tar.gz
