@@ -24,4 +24,4 @@ COPY ./start.sh /opt/start.sh
 RUN chmod +x /opt/start.sh
 
 # Run the startup script
-CMD ["/opt/start.sh"]
+CMD ["sh","/opt/start.sh"]
