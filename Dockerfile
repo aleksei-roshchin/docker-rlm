@@ -8,6 +8,7 @@ RUN wget http://www.reprisesoftware.com/license_admin_kits/x64_l1.admin.tar.gz
 RUN tar xvf x64_l1.admin.tar.gz
 RUN rm x64_l1.admin.tar.gz
 RUN cp -rp /x64_l1.admin/* /usr/local/rlm/
+RUN mv /usr/local/rlm/rlm /usr/local/rlm/rlm.st
 
 VOLUME /opt/rlm/licenses
 
