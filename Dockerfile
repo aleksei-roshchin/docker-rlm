@@ -18,9 +18,11 @@ EXPOSE 5054
 # isv server
 EXPOSE 4101
 
+RUN /usr/local/rlm/rlm
+
 # Add startup script
-COPY ./start.sh /opt/start.sh
-RUN chmod +x /opt/start.sh
+# COPY ./start.sh /opt/start.sh
+# RUN chmod +x /opt/start.sh
 
 # Run the startup script
-CMD ["/opt/start.sh"]
+# CMD ["/opt/start.sh"]
