@@ -19,8 +19,8 @@ EXPOSE 5054
 EXPOSE 4101
 
 # Add startup script
-COPY ./start.sh /usr/local/rlm/start.sh
-RUN chmod +x /usr/local/rlm/start.sh
+COPY ./start.sh /opt/start.sh
+RUN chmod +x /opt/start.sh
 
 # Run the startup script
-CMD ["/usr/local/rlm/start.sh"]
+CMD ["/opt/start.sh"]
